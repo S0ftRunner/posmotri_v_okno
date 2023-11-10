@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
@@ -40,14 +40,11 @@ ol {
   list-style: none;
 }
 
-
-
 .content {
   height: 534px;
   display: flex;
   flex-direction: row;
   justify-content: end;
-  align-items: center;
   gap: 30px;
   box-sizing: border-box;
 }
@@ -55,6 +52,7 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
+  justify-content: end;
   gap: 16px;
 }
 
@@ -74,18 +72,27 @@ ol {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 26px;
+}
+
+.title {
+  color: #fff;
+  font-family: Oswald;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  height: 100%;
-}
-
-.content__list .content__list-item:not(:last-child) {
   gap: 30px;
 }
 
