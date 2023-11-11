@@ -108,6 +108,11 @@ fieldset {
   color: #fff;
 }
 
+.search-form__textfield:hover {
+  outline: 1px solid #fff;
+  cursor: text;
+}
+
 .search-form__textfield:focus {
   outline: 1px solid #FFF;
   outline-offset: 1px;
@@ -134,6 +139,10 @@ fieldset {
 .button:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.button:active {
+  background-color: #545050;
 }
 
 .search-form__submit-button {
@@ -175,13 +184,24 @@ fieldset {
 
 .content__card-link_current {
   display: block;
-  color: #545050;
+  background-color: #545050;
 }
 
 .content__card-link {
   text-decoration: none;
   color: #fff;
 }
+
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
+.content__card-link:active {
+  display: block;
+  background-color: #545050; 
+}
+
+
 
 .content__video-card-title {
   font-family: Oswald;
