@@ -103,6 +103,13 @@ fieldset {
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.search-form__textfield:focus {
+  outline: 1px solid #FFF;
+  outline-offset: 1px;
+  border-radius: 0;
 }
 
 .checkbox__form-container {
@@ -119,7 +126,12 @@ fieldset {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-    height: 34px;
+  height: 34px;
+}
+
+.button:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .search-form__submit-button {
@@ -155,8 +167,6 @@ fieldset {
   overflow-y: scroll;
   gap: 30px;
 }
-
-
 
 .content__card-link {
   text-decoration: none;
@@ -197,7 +207,6 @@ fieldset {
   width: 194px;
   height: 103px;
 }
-
 
 .more-button {
   width: 100%;
