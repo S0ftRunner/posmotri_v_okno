@@ -142,8 +142,9 @@ fieldset {
 
 /* продумать как расположить фокус у чекбоксов */
 .checkbox__button-container:focus-visible {
+  display: block;
   outline: 1px solid #FFF;
-  outline-offset: 30px;
+  outline-offset: -1px;
 }
 
 .search-form__checkbox + .search-form__pseudo-checkbox {
@@ -160,10 +161,12 @@ fieldset {
   position: absolute;
   width: 15px;
   height: 15px;
-  background-color: #FFF;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  margin-left: -7.5px;
+  margin-top: -7.5px;
+  background-color: #FFF;
+  background-position: center;
 }
 
 .button {
