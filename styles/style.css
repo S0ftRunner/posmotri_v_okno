@@ -8,6 +8,10 @@ html {
   block-size: 100%;
 }
 
+:focus {
+  outline: none;
+}
+
 .page {
   inline-size: 1200px;
   block-size: 100%;
@@ -101,6 +105,7 @@ fieldset {
 
 .search-form__textfield {
   width: 100%;
+  height: 27px;
   background: transparent;
   border: none;
   border-top: 1px solid #fff;
@@ -109,15 +114,23 @@ fieldset {
 }
 
 .search-form__textfield:hover {
-  outline: 1px solid #fff;
   cursor: text;
 }
 
-.search-form__textfield:focus-visible {
-  outline: 1px solid #FFF;
+/* 
+  Тут получилось не совсем понятно, у чекбоксов нормально все работает, а у
+  инпута все равно срабатывает обычный фокус( Как быть?
+ */
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
   outline-offset: 1px;
   border-radius: 0;
 }
+
+.search-form__textfield:active {
+  border: 1px solid #FFF;
+}
+
 
 .checkbox__form-container {
   width: 212px;
@@ -140,13 +153,6 @@ fieldset {
   cursor: pointer;
 }
 
-/* продумать как расположить фокус у чекбоксов */
-.checkbox__button-container:focus-visible {
-  display: block;
-  outline: 1px solid #FFF;
-  outline-offset: -1px;
-}
-
 .search-form__checkbox + .search-form__pseudo-checkbox {
   position: relative;
   display: flex;
@@ -165,7 +171,7 @@ fieldset {
   left: 50%;
   margin-left: -7.5px;
   margin-top: -7.5px;
-  background-color: #FFF;
+  background-color: #fff;
   background-position: center;
 }
 
@@ -183,7 +189,7 @@ fieldset {
 }
 
 .button:focus-visible {
-  outline: 1px solid #FFF;
+  outline: 1px solid #fff;
   outline-offset: -3px;
 }
 
@@ -239,10 +245,9 @@ fieldset {
   color: #fff;
 }
 
-/* Продумать более лучшее расположение фокуса у карточек */
 .content__card-link:focus-visible {
-  outline: 1px solid #FFF;
-  outline-offset: -2px;
+  outline: none;
+  border: 1px solid #FFF;
 }
 
 .content__card-link:hover {
