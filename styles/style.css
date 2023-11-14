@@ -101,6 +101,7 @@ fieldset {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 5px;
 }
 
 .search-form__textfield {
