@@ -134,6 +134,7 @@ fieldset {
 
 
 .checkbox__form-container {
+  align-self: flex-start;
   width: 212px;
 }
 
@@ -302,6 +303,8 @@ fieldset {
   object-fit: cover;
   object-position: center;
 }
+
+
 
 .more-button {
   width: 100%;
